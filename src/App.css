@@ -9,6 +9,11 @@
 body{
     line-height: 1.4;
 }
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 .main-wrapper img{
     width: 100%;
     display: block;
@@ -141,7 +146,6 @@ body{
     padding: 2rem 0;
 }
 
-/* header */
 .header{
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./assets/banner-bg.jpg) center/cover no-repeat;
     height: 100vh;
@@ -242,8 +246,6 @@ body{
         padding-left: 2rem;
         padding-right: 2rem;
     }
-
-    /* header */
     .header{
         height: calc(100vh - 75px);
     }

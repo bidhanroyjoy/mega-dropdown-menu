@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+// import { Link } from "react-scroll";
 import Car from "../assets/car.png";
 import Logo from "../assets/logo.png";
 import Cloth from "../assets/cloth.png";
@@ -12,9 +13,10 @@ const Navbar = () => {
     <div className="main-wrapper">
       <div className="navbar">
         <div className="brand-and-icon">
-          {/* <Link to="/"> */}
-          <img src={Logo} alt="comfy sloth" />
-          {/* </Link> */}
+          <a href="/">
+            <img src={Logo} alt="Walcart" />
+          </a>
+
           <button type="button" className="navbar-toggler">
             <i className="fas fa-bars"></i>
           </button>
@@ -22,7 +24,7 @@ const Navbar = () => {
         <div className="navbar-collapse">
           <ul className="navbar-nav">
             <li>
-              <a href="#">home</a>
+              <a href="/home">home</a>
             </li>
             <li>
               <a href="#" className="menu-link">
@@ -36,13 +38,13 @@ const Navbar = () => {
                   <h4>top categories</h4>
                   <ul>
                     <li>
-                      <a href="cell">cell phones & accessories</a>
+                      <Link to="/accessories">cell phones & accessories</Link>
                     </li>
                     <li>
-                      <a href="tv">smart tv</a>
+                      <Link to="/tv">smart tv</Link>
                     </li>
                     <li>
-                      <a href="computer">computer & laptops</a>
+                      <Link to="/gadget">Computer & Laptop</Link>
                     </li>
                     <li>
                       <a href="camera">digital cameras</a>
@@ -56,19 +58,19 @@ const Navbar = () => {
                   <h4>other categories</h4>
                   <ul>
                     <li>
-                      <a href="#">iphones</a>
+                      <Link to="/iphone">iphone</Link>
                     </li>
                     <li>
-                      <a href="#">speakers</a>
+                      <Link to="/speaker">speakers</Link>
                     </li>
                     <li>
-                      <a href="#">samsung devices</a>
+                      <a href="device">samsung devices</a>
                     </li>
                     <li>
-                      <a href="#">audio & headphones</a>
+                      <a href="headphone">audio & headphones</a>
                     </li>
                     <li>
-                      <a href="#">vehicles electronics & GPS</a>
+                      <a href="vechile">vehicles electronics & GPS</a>
                     </li>
                   </ul>
                 </div>
@@ -96,19 +98,19 @@ const Navbar = () => {
                   <h4>top categories</h4>
                   <ul>
                     <li>
-                      <a href="#">men's clothing</a>
+                      <Link to="/cloth">men's clothing</Link>
                     </li>
                     <li>
-                      <a href="#">women's clothing</a>
+                      <Link to="/wcloth">women's clothing</Link>
                     </li>
                     <li>
-                      <a href="#">men's shoes</a>
+                      <a href="shoes">men's shoes</a>
                     </li>
                     <li>
-                      <a href="#">women's shoes</a>
+                      <a href="women's shoe">women's shoes</a>
                     </li>
                     <li>
-                      <a href="#">clothing deals</a>
+                      <a href="deal">clothing deals</a>
                     </li>
                   </ul>
                 </div>
@@ -117,19 +119,19 @@ const Navbar = () => {
                   <h4>other categories</h4>
                   <ul>
                     <li>
-                      <a href="#">fine jewelry</a>
+                      <a href="jewelry">fine jewelry</a>
                     </li>
                     <li>
-                      <a href="#">fashion jewelry</a>
+                      <a href="fashion">fashion jewelry</a>
                     </li>
                     <li>
-                      <a href="#">men's accessories</a>
+                      <a href="men">men's accessories</a>
                     </li>
                     <li>
-                      <a href="#">handbags & bags</a>
+                      <a href="handbag">handbags & bags</a>
                     </li>
                     <li>
-                      <a href="#">kid's clothing</a>
+                      <a href="kid">kid's clothing</a>
                     </li>
                   </ul>
                 </div>
@@ -159,19 +161,19 @@ const Navbar = () => {
                   <h4>top categories</h4>
                   <ul>
                     <li>
-                      <a href="#">makeup</a>
+                      <a href="makeup">makeup</a>
                     </li>
                     <li>
-                      <a href="#">health care</a>
+                      <a href="healthcare">health care</a>
                     </li>
                     <li>
-                      <a href="#">fragrance</a>
+                      <a href="fragrance">fragrance</a>
                     </li>
                     <li>
-                      <a href="#">hair care & stylings</a>
+                      <a href="hair">hair care & stylings</a>
                     </li>
                     <li>
-                      <a href="#">manicure & pedicure</a>
+                      <a href="manicure&pedicure">manicure & pedicure</a>
                     </li>
                   </ul>
                 </div>
@@ -180,19 +182,19 @@ const Navbar = () => {
                   <h4>other categories</h4>
                   <ul>
                     <li>
-                      <a href="#">skin care</a>
+                      <a href="skincare">skin care</a>
                     </li>
                     <li>
-                      <a href="#">vitamins</a>
+                      <a href="vitamins">vitamins</a>
                     </li>
                     <li>
-                      <a href="#">vision care</a>
+                      <a href="visioncare">vision care</a>
                     </li>
                     <li>
-                      <a href="#">oral care</a>
+                      <a href="oralcare">oral care</a>
                     </li>
                     <li>
-                      <a href="#">shaving & hair removal</a>
+                      <a href="shaving&hair">shaving & hair removal</a>
                     </li>
                   </ul>
                 </div>
@@ -222,19 +224,19 @@ const Navbar = () => {
                   <h4>top categories</h4>
                   <ul>
                     <li>
-                      <a href="#">cycling</a>
+                      <a href="cycling">cycling</a>
                     </li>
                     <li>
-                      <a href="#">outdoor sports</a>
+                      <a href="outdoor">outdoor sports</a>
                     </li>
                     <li>
-                      <a href="#">hunting</a>
+                      <a href="hunting">hunting</a>
                     </li>
                     <li>
-                      <a href="#">fishing</a>
+                      <a href="fishing">fishing</a>
                     </li>
                     <li>
-                      <a href="#">fitness & yoga</a>
+                      <a href="fitness">fitness & yoga</a>
                     </li>
                   </ul>
                 </div>
@@ -243,19 +245,19 @@ const Navbar = () => {
                   <h4>other categories</h4>
                   <ul>
                     <li>
-                      <a href="#">tennis</a>
+                      <a href="tennis">tennis</a>
                     </li>
                     <li>
-                      <a href="#">swimming</a>
+                      <a href="swimming">swimming</a>
                     </li>
                     <li>
-                      <a href="#">winter sports</a>
+                      <a href="sports">winter sports</a>
                     </li>
                     <li>
-                      <a href="#">fitness technology</a>
+                      <a href="fitness">fitness technology</a>
                     </li>
                     <li>
-                      <a href="#">sports wear</a>
+                      <a href="wear">sports wear</a>
                     </li>
                   </ul>
                 </div>
