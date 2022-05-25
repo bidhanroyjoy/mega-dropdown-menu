@@ -24,7 +24,7 @@ const Navbar = () => {
         <div className="navbar-collapse">
           <ul className="navbar-nav">
             <li>
-              <a href="/home">home</a>
+            <Link to="/">home</Link>
             </li>
             <li>
               <a href="#" className="menu-link">
@@ -107,7 +107,7 @@ const Navbar = () => {
                       <a href="shoes">men's shoes</a>
                     </li>
                     <li>
-                      <a href="women's shoe">women's shoes</a>
+                      <a href="women's shoes">women's shoes</a>
                     </li>
                     <li>
                       <a href="deal">clothing deals</a>

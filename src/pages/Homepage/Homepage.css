@@ -1,0 +1,18 @@
+.home{
+    display: flex;
+    max-width: 100%;
+    margin: auto;
+    padding:0px;
+    padding-bottom: -5px;
+}
+.body{
+    width: 80%;
+    margin-left: 260px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    overflow-y: hidden;
+}
+.side{
+    /* flex: 3; */
+    background-color: #fff;
+}
